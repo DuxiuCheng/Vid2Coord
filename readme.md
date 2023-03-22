@@ -2,11 +2,15 @@
 
 ## File Structures
 
+### Directories
+
 - config
 - data
 - icon
 - models
 - qss
+
+### Files
 
 - camera_calibration.py
 - camera.py
@@ -37,9 +41,10 @@
 ## Usage
 
 
-## TODO
+## Weekly Plan
 
--[ ] 1111
--[ ] 2222
--[ ] 3333
+- [ ] 分离坐标发送和目标检测两部分的代码
+- [ ] 将cv2.dnn模型更换为YoloV5模型
+- [ ] 性能调查
+- [ ] 更好的文件结构与说明文档
 
