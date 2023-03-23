@@ -22,6 +22,7 @@ gimbal_uart = serial.Serial(port=GIMBAL_UART_PORT, baudrate=GIMBAL_UART_BAUDRATE
 
 # 设置舵机角度
 def set_gimbal_raw_angle(angle_down, angle_up):
+	# a,b = handdata()
 	result=gimbal_uart.write(f"{int(angle_down)},{int(angle_up)},1,0E".encode("utf-8"))
 	print(f"{int(angle_down)},{int(angle_up)},1,0E")
 	print("写总字节数:",result)

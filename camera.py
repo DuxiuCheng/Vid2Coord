@@ -38,8 +38,8 @@ class Camera:
 	def get_video_capture(self):
 		'''生成Capture对象'''
 		capture = None
-		capture = cv2.VideoCapture(int(self.config['device']))
-		# capture = cv2.VideoCapture("http://192.168.227.156:4747/video")
+		# capture = cv2.VideoCapture(int(self.config['device']))
+		capture = cv2.VideoCapture("http://192.168.43.84:4747/video")
 		# 设置分辨率
 		capture.set(cv2.CAP_PROP_FRAME_HEIGHT, int(self.config['img_height']))#设置图像高度
 		capture.set(cv2.CAP_PROP_FRAME_WIDTH, int(self.config['img_width'])) #设置图像宽度
