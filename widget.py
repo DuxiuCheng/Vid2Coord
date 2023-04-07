@@ -9,7 +9,7 @@ from PySide6.QtCore import *
 from camera import Camera
 from camera_calibration import CameraCalibration
 
-from gimbal_uart_protocol import *
+# from gimbal_uart_protocol import *
 
 class MainWindow(QMainWindow):
     def __init__(self):
